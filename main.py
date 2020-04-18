@@ -25,13 +25,6 @@ class QuizletBot:
         self.driver.find_element_by_xpath('//*[@id="password"]').send_keys(psw)
         self.driver.find_element_by_xpath('/html/body/div[8]/div/div[2]/form/button').click()
 
-    # def go_to_last_list(self):
-    #     brassart_btn = self.driver.find_element_by_xpath(
-    #         '//*[@id="DashboardSidebarTarget"]/div/div[1]/div[2]/div[5]/div/span/a/span/div')
-    #     brassart_btn.click()
-    #     first_item = self.driver.find_element_by_xpath(
-    #         '//*[@id="DashboardPageTarget"]/div/div[2]/div/div/div/div/div/div/div[1]/div[1]')
-    #     first_item.click()
 
     def start_safe(self):
         self.driver.get('https://quizlet.com/fr-fr')
